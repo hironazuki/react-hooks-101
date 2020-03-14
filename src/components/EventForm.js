@@ -37,7 +37,7 @@ const EventForm = () => {
     e.preventDefault()
     const result = window.confirm('全てのイベントを本当に削除しても良いですか？')
     if (result) {
-      dispatch({ ntype: DELETE_ALL_EVENTS })
+      dispatch({ type: DELETE_ALL_EVENTS })
 
       dispatch({
         type: ADD_OPERATION_LOG,
